@@ -11,7 +11,7 @@ async function printTimeAndWeather(locations) {
     const weatherResponse = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=f1d2dfe8f5b5e69350af644692a6b641`
     );
-    // we have only 8 free call of this api
+    // we have only 5 free call of this api
     const timeResponse = await axios.get(
       `https://www.amdoren.com/api/timezone.php?api_key=qTXJkenGWqWPEdUi5d9zaeNdsvbFHf&loc=${location}`
     );
